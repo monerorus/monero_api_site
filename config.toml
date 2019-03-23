@@ -1,0 +1,57 @@
+baseURL = "http://news.xmr.ru/"
+languageCode = "ru"
+title = "Monero RPC API"
+theme = "docuapi"
+
+# Code higlighting settings
+pygmentsCodefences = true
+pygmentsCodeFencesGuesSsyntax = false
+pygmentsOptions = ""
+pygmentsStyle = "monokai"
+# The monokai stylesheet is included in the base template.
+pygmentsUseClasses = true
+
+defaultContentLanguage = "en"
+
+[params]
+search = true
+
+# Configure the language example tabs.
+[[params.language_tabs]]
+key = "shell"
+name = "Shell" 
+[[params.language_tabs]]
+key = "json"
+name = "Response"
+
+#Languages 
+[languages]
+
+[languages.ru]
+languageName = "Русский"
+weight = 1
+title = "Monero RPC API"
+
+# Left sidebar footer items. Use HTMl or Markdown.
+toc_footers = [ 
+"[Monero Site](https://getmonero.org)",
+"[Monero Source](https://github.com/monero-project)",
+"[XMR.RU](https://xmr.ru)"
+]
+[languages.ru.blackfriday]
+angledQuotes = false
+hrefTargetBlank = true
+
+[languages.en]
+languageName = "English"
+weight = 2
+title = "Monero RPC API"
+
+# Left sidebar footer items. Use HTMl or Markdown.
+toc_footers = [ 
+"[Monero Site](https://getmonero.org)",
+"[Monero Source](https://github.com/monero-project)"
+]
+[languages.en.blackfriday]
+angledQuotes = false
+hrefTargetBlank = true
