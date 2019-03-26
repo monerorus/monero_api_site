@@ -1,5 +1,5 @@
-baseURL = "http://news.xmr.ru/"
-languageCode = "ru"
+baseURL = "http://api.xmr.ru/"
+languageCode = "en"
 title = "Monero RPC API"
 theme = "docuapi"
 
