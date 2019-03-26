@@ -349,7 +349,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Similar to [get_block_header_by_height](#get-block-header-by-height) above, but for a range of blocks. This method includes a starting block height and an ending block height as parameters to retrieve basic information about the range of blocks.  
-Alias: *getblockheadersrange*.  
+Alias: **getblockheadersrange**  
 
 |             | Parameter      | Type         | Description
 | ---         | ---            | ---          | ---
@@ -506,7 +506,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Retrieve information about incoming and outgoing connections to your node.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter          | Type         | Description
 | ---         | ---                | ---          | ---
@@ -639,7 +639,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Look up information regarding hard fork voting and readiness.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter       | Type         | Description
 | ---         | ---             | ---          | ---
@@ -690,7 +690,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 ```
 
 Ban another node by IP.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type         | Description
 | ---         | ---       | ---          | ---
@@ -726,7 +726,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Get list of banned IPs.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type         | Description
 | ---         | ---       | ---          | ---
@@ -753,7 +753,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Flush tx ids from transaction pool  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type             | Description
 | ---         | ---       | ---              | ---
@@ -821,7 +821,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Get the coinbase ammount and the fees ammount for n last blocks starting at particular height  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter       | Type         | Description
 | ---         | ---             | ---          | ---
@@ -850,7 +850,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Give the node current version  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type         | Description
 | ---         | ---       | ---          | ---
@@ -878,7 +878,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Gives an estimation on fees per kB.  
-Alias: *None*.  
+Alias: None.  
 |             | Parameter      | Type         | Description
 | ---         | ---            | ---          | ---
 |**Inputs:**  | *grace_blocks* | unsigned int | Optional
@@ -909,7 +909,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Display alternative chains seen by the node.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter    | Type         | Description
 | ---         | ---          | ---          | ---
@@ -938,7 +938,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Relay a list of transaction IDs.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type            | Description
 | ---         | ---       | ---             | ---
@@ -999,7 +999,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Get synchronisation informations  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter            | Type         | Description
 | ---         | ---                  | ---          | ---
@@ -1037,7 +1037,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 Get all transaction pool backlog  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter      | Type                          | Description
 | ---         | ---            | ---                           | ---
@@ -1070,7 +1070,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter      | Type                  | Description
 | ---         | ---            | ---                   | ---
@@ -1126,7 +1126,7 @@ $ curl -X POST http://127.0.0.1:18081/get_height -H 'Content-Type: application/j
 }
 ```
 Get the node's current height.  
-Alias: */getheight*.  
+Alias: **/getheight**.  
 
 |             | Parameter | Type         | Description
 | ---         | ---       | ---          | ---
@@ -1140,7 +1140,7 @@ Alias: */getheight*.
 
 
 Get all blocks info. Binary request.  
-Alias: */getblocks.bin*.  
+Alias: **/getblocks.bin**.  
 
 |             | Parameter      | Type                   | Description
 | ---         | ---            | ---                    | ---
@@ -1168,7 +1168,7 @@ $ curl -X POST http://127.0.0.1:18081/get_blocks.bin -d '{"block_ids":["d109a406
 
 Get blocks by height. Binary request.
 
-Alias: */getblocks_by_height.bin*.
+Alias: **/getblocks_by_height.bin**.
 
 |             | Parameter | Type                  | Description
 | ---         | ---       | ---                   | ---
@@ -1190,7 +1190,7 @@ curl -X POST http://127.0.0.1:18081/get_blocks_by_height.bin --data-binary '{"he
 
 Get hashes. Binary request.
 
-Alias: */gethashes.bin*.
+Alias: **/gethashes.bin**.
 
 |             | Parameter      | Type                   | Description
 | ---         | ---            | ---                    | ---
@@ -1231,7 +1231,7 @@ $ curl -X POST http://127.0.0.1:18081/get_o_indexes.bin --data-binary '{"txid":"
 ## **/get_outs.bin**
 
 Get outputs. Binary request.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter  | Type         | Description
 | ---         | ---        | ---          | ---
@@ -1318,7 +1318,7 @@ curl -X POST http://127.0.0.1:18081/get_transactions -d '{"txs_hashes":["d6e4815
 ```
 
 Look up one or more transactions by hash.  
-Alias: */gettransactions*.  
+Alias: **/gettransactions**.  
 
 
 |             | Parameter           | Type                  | Description
@@ -1368,7 +1368,7 @@ $ curl -X POST http://127.0.0.1:18081/get_alt_blocks_hashes -H 'Content-Type: ap
 }
 ```
 Get the known blocks hashes which are not on the main chain.  
-Alias: *None*.  
+Alias: None.  
 
 
 |             | Parameter   | Type             | Description
@@ -1392,7 +1392,7 @@ $ curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1
 }
 ```
 Check if outputs have been spent using the key image associated with the output.  
-Alias: *None*.  
+Alias: None.  
 |             | Parameter    | Type              | Description
 | ---         | ---          | ---               | ---
 |**Inputs:**  | *key_images* | string list       | List of key image hex strings to check.
@@ -1410,7 +1410,7 @@ $ curl -X POST http://127.0.0.1:18081/send_raw_transaction -d '{"tx_as_hex":"de6
 ```
 
 Broadcast a raw transaction to the network.  
-Alias: */sendrawtransaction*.  
+Alias: **/sendrawtransaction**.  
 
 |             | Parameter      | Type    | Description
 | ---         | ---            | ---     | ---
@@ -1441,7 +1441,7 @@ $ curl -X POST http://127.0.0.1:18081/start_mining -d '{"do_background_mining":f
 }
 ```
 Start mining on the daemon.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter              | Type         | Description
 | ---         | ---                    | ---          | ---
@@ -1506,7 +1506,7 @@ $ curl -X POST http://127.0.0.1:18081/mining_status -H 'Content-Type: applicatio
 ```
 
 Get the mining status of the daemon.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter                    | Type         | Description
 | ---         | ---                          | ---          | ---
@@ -1530,7 +1530,7 @@ $ curl -X POST http://127.0.0.1:18081/save_bc -H 'Content-Type: application/json
 }
 ```
 Save the blockchain. The blockchain does not need saving and is always saved when modified, however it does a sync to flush the filesystem cache onto the disk for safety purposes against Operating System or Harware crashes.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type    | Description
 | ---         | ---       | ---     | ---
@@ -1579,7 +1579,7 @@ $ curl -X POST http://127.0.0.1:18081/get_peer_list -H 'Content-Type: applicatio
 }
 ```
 Get the known peers list.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter   | Type         | Description
 | ---         | ---         | ---          | ---
@@ -1620,7 +1620,7 @@ $ curl -X POST http://127.0.0.1:18081/set_log_hash_rate -d '{"visible":true}' -H
 ```
 
 Set the log hash rate display mode.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type    | Description
 | ---         | ---       | ---     | ---
@@ -1641,7 +1641,7 @@ $ curl -X POST http://127.0.0.1:18081/set_log_level -d '{"level":1}' -H 'Content
 ```
 Set the daemon log level.
 By default, log level is set to `0`.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type    | Description
 | ---         | ---       | ---     | ---
@@ -1730,7 +1730,7 @@ Categories are represented as a comma separated list of `<Category>:<level>` (si
 A level automatically includes higher level.
 By default, categories are set to `*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO`.
 Setting the categories to "" prevent any logs to be outputed.  
-Alias: *None*.
+Alias: None.
 
 |             | Parameter    | Type   | Description
 | ---         | ---          | ---    | ---
@@ -1779,7 +1779,7 @@ $ curl -X POST http://127.0.0.1:18081/get_transaction_pool -H 'Content-Type: app
 }
 ```
 Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information for the txpool in the node's memory.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter               | Type         | Description
 | ---         | ---                     | ---          | ---
@@ -1846,7 +1846,7 @@ $ curl -X POST http://127.0.0.1:18081/get_transaction_pool_hashes.bin -H 'Conten
 }
 ```
 Get hashes from transaction pool. Binary request.  
-Alias: *None*.  
+Alias: None.  
 
 
 |             | Parameter | Type    | Description
@@ -1885,7 +1885,7 @@ $ curl -X POST http://127.0.0.1:18081/get_transaction_pool_stats -H 'Content-Typ
 }
 ```
 Get the transaction pool statistics.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter           | Type         | Description
 | ---         | ---                 | ---          | ---
@@ -1921,7 +1921,7 @@ $ curl -X POST http://127.0.0.1:18081/stop_daemon -H 'Content-Type: application/
 }
 ```
 Send a command to the daemon to safely disconnect and shut down.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type   | Description
 | ---         | ---       | ---    | ---
@@ -1934,8 +1934,8 @@ Alias: *None*.
 This method is a convenient backward support and should not be used anymore. See [get_info](#get-info) JSON RPC for details.  
 Alias:
 
-* */getinfo*
-* *get_info*
+* **/getinfo**
+* **get_info**
 
 
 ## **/get_limit**
@@ -1952,7 +1952,7 @@ $ curl -X POST http://127.0.0.1:18081/get_limit -H 'Content-Type: application/js
 }
 ```
 Get daemon bandwidth limits.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter  | Type         | Description
 | ---         | ---        | ---          | ---
@@ -1977,7 +1977,7 @@ $ curl -X POST http://127.0.0.1:18081/set_limit -d '{"limit_down": 1024}' -H 'Co
 }
 ```
 Set daemon bandwidth limits.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter    | Type         | Description
 | ---         | ---          | ---          | ---
@@ -2000,7 +2000,7 @@ $ curl -X POST http://127.0.0.1:18081/out_peers -d '{"out_peers": 3232235535}' -
 }
 ```
 Limit number of Outgoing peers.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter   | Type         | Description
 | ---         | ---         | ---          | ---
@@ -2020,7 +2020,7 @@ $ curl -X POST http://127.0.0.1:18081/out_peers -d '{"in_peers": 3232235535}' -H
 }
 ```
 Limit number of Incoming peers.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter  | Type         | Description
 | ---         | ---        | ---          | ---
@@ -2040,7 +2040,7 @@ $ curl -X POST http://127.0.0.1:18081/start_save_graph -H 'Content-Type: applica
 }
 ```
 Obsolete. Conserved here for reference.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type   | Description
 | ---         | ---       | ---    | ---
@@ -2059,7 +2059,7 @@ $ curl -X POST http://127.0.0.1:18081/stop_save_graph -H 'Content-Type: applicat
 }
 ```
 Obsolete. Conserved here for reference.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type   | Description
 | ---         | ---       | ---    | ---
@@ -2071,7 +2071,7 @@ Alias: *None*.
 
 
 Get outputs.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter  | Type         | Description
 | ---         | ---        | ---          | ---
@@ -2106,7 +2106,7 @@ $ curl -X POST http://127.0.0.1:18081/update -d '{"command":"check"}' -H 'Conten
 }
 ```
 Update daemon.  
-Alias: *None*.  
+Alias: None.  
 
 |             | Parameter | Type    | Description
 | ---         | ---       | ---     | ---
