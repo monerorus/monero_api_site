@@ -13,6 +13,9 @@ pygmentsUseClasses = true
 
 defaultContentLanguage = "en"
 
+[outputs]
+home = [ "HTML", "RSS"]
+
 [params]
 search = true
 
