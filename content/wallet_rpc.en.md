@@ -961,7 +961,24 @@ rpc_connection.sign_transfer(params)
 > Sign tx using the previously generated unsigned_txset
 ##### shell:
 ```shell
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign_transfer","params":{"unsigned_txset":...long_hex..."}}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign_transfer","params":{"unsigned_txset": "...long_hex..."}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "sign_transfer",
+    "params": {"unsigned_txset": "...long_hex..."},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"unsigned_txset": "...long_hex..."}
+rpc_connection.sign_transfer(params)
 ```
 ```json
 {
@@ -992,6 +1009,23 @@ Alias: *None*.
 ```shell
 curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_transfer","params":{"tx_data_hex":...long_hex..."}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "submit_transfer",
+    "params": {"tx_data_hex": "...long_hex..."},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"tx_data_hex": "...long_hex..."}
+rpc_connection.submit_transfer(params)
+```
 ```json
 {
   "id": "0",
@@ -1017,6 +1051,23 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_dust","params":{"get_tx_keys":true}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "sweep_dust",
+    "params": {"get_tx_keys": True},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"get_tx_keys": True}
+rpc_connection.sweep_dust(params)
 ```
 ```json
 {
@@ -1052,6 +1103,35 @@ Alias: *sweep_unmixable*.
 ##### shell:
 ```shell
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_all","params":{"address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt","subaddr_indices":[4],"ring_size":7,"unlock_time":0,"get_tx_keys":true}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "sweep_all",
+    "params": {
+        "address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt",
+        "subaddr_indices": [4],
+        "ring_size": 7,
+        "unlock_time": 0,
+        "get_tx_keys": True,
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt",
+    "subaddr_indices": [4],
+    "ring_size": 7,
+    "unlock_time": 0,
+    "get_tx_keys": True,
+}
+rpc_connection.sweep_all(params)
 ```
 ```json
 {
@@ -1100,6 +1180,35 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_single","params":{"address":"74Jsocx8xbpTBEjm3ncKE5LBQbiJouyCDaGhgSiebpvNDXZnTAbW2CmUR5SsBeae2pNk9WMVuz6jegkC4krUyqRjA6VjoLD","ring_size":7,"unlock_time":0,"key_image":"a7834459ef795d2efb6f665d2fd758c8d9288989d8d4c712a68f8023f7804a5e","get_tx_keys":true}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "sweep_single",
+    "params": {
+        "address": "74Jsocx8xbpTBEjm3ncKE5LBQbiJouyCDaGhgSiebpvNDXZnTAbW2CmUR5SsBeae2pNk9WMVuz6jegkC4krUyqRjA6VjoLD",
+        "ring_size": 7,
+        "unlock_time": 0,
+        "key_image": "a7834459ef795d2efb6f665d2fd758c8d9288989d8d4c712a68f8023f7804a5e",
+        "get_tx_keys": True,
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "address": "74Jsocx8xbpTBEjm3ncKE5LBQbiJouyCDaGhgSiebpvNDXZnTAbW2CmUR5SsBeae2pNk9WMVuz6jegkC4krUyqRjA6VjoLD",
+    "ring_size": 7,
+    "unlock_time": 0,
+    "key_image": "a7834459ef795d2efb6f665d2fd758c8d9288989d8d4c712a68f8023f7804a5e",
+    "get_tx_keys": True,
+}
+rpc_connection.sweep_single(params)
 ```
 ```json
 {
@@ -1152,6 +1261,23 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"relay_tx","params":{"hex":"...tx_metadata..."}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "relay_tx",
+    "params": {"hex": "...tx_metadata..."},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"hex": "...tx_metadata..."}
+rpc_connection.relay_tx(params)
+```
 ```json
 {
   "id": "0",
@@ -1176,6 +1302,21 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"store"}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "store"
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+rpc_connection.store()
+```
 ```json
 {
   "id": "0",
@@ -1198,6 +1339,23 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_payments","params":{"payment_id":"60900e5603bf96e3"}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "get_payments",
+    "params": {"payment_id": "60900e5603bf96e3"},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"payment_id": "60900e5603bf96e3"}
+rpc_connection.get_payments(params)
 ```
 ```json
 {
@@ -1242,6 +1400,23 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_bulk_payments","params":{"payment_ids":["60900e5603bf96e3"],"min_block_height":"120000"}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "get_bulk_payments",
+    "params": {"payment_ids": ["60900e5603bf96e3"], "min_block_height": "120000"},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"payment_ids": ["60900e5603bf96e3"], "min_block_height": "120000"}
+rpc_connection.get_bulk_payments(params)
 ```
 ```json
 {
@@ -1290,6 +1465,33 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"all","account_index":0,"subaddr_indices":[3],"verbose":true}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "incoming_transfers",
+    "params": {
+        "transfer_type": "all",
+        "account_index": 0,
+        "subaddr_indices": [3],
+        "verbose": True,
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "transfer_type": "all",
+    "account_index": 0,
+    "subaddr_indices": [3],
+    "verbose": True,
+}
+rpc_connection.incoming_transfers(params)
+```
 ```json
 {
   "id": "0",
@@ -1329,6 +1531,33 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"available","account_index":0,"subaddr_indices":[3],"verbose":true}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "incoming_transfers",
+    "params": {
+        "transfer_type": "available",
+        "account_index": 0,
+        "subaddr_indices": [3],
+        "verbose": True,
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "transfer_type": "available",
+    "account_index": 0,
+    "subaddr_indices": [3],
+    "verbose": True,
+}
+rpc_connection.incoming_transfers(params)
+```
 ```json
 {
   "id": "0",
@@ -1359,6 +1588,33 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"unavailable","account_index":0,"subaddr_indices":[3],"verbose":true}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "incoming_transfers",
+    "params": {
+        "transfer_type": "unavailable",
+        "account_index": 0,
+        "subaddr_indices": [3],
+        "verbose": True,
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "transfer_type": "unavailable",
+    "account_index": 0,
+    "subaddr_indices": [3],
+    "verbose": True,
+}
+rpc_connection.incoming_transfers(params)
 ```
 ```json
 {
@@ -1404,6 +1660,23 @@ Return a list of incoming transfers to the wallet.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"view_key"}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "query_key",
+    "params": {"key_type": "view_key"},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"key_type": "view_key"}
+rpc_connection.query_key(params)
+```
 ```json
 {
   "id": "0",
@@ -1418,6 +1691,23 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"mnemonic"}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "query_key",
+    "params": {"key_type": "mnemonic"},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"key_type": "mnemonic"}
+rpc_connection.query_key(params)
 ```
 ```json
 {
@@ -1446,6 +1736,27 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"standard_address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt"}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "make_integrated_address",
+    "params": {
+        "standard_address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt"
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "standard_address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt"
+}
+rpc_connection.make_integrated_address(params)
 ```
 ```json
 {
@@ -1476,6 +1787,27 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"split_integrated_address","params":{"integrated_address": "5F38Rw9HKeaLQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZXCkbHUXdPHyiUeRyokn"}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "split_integrated_address",
+    "params": {
+        "integrated_address": "5F38Rw9HKeaLQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZXCkbHUXdPHyiUeRyokn"
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "integrated_address": "5F38Rw9HKeaLQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZXCkbHUXdPHyiUeRyokn"
+}
+rpc_connection.split_integrated_address(params)
+```
 ```json
 {
   "id": "0",
@@ -1505,6 +1837,21 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_wallet"}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "stop_wallet",
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+rpc_connection.stop_wallet()
+```
 ```json
 {
   "id": "0",
@@ -1529,6 +1876,21 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_blockchain"}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "rescan_blockchain",
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+rpc_connection.rescan_blockchain()
+```
 ```json
 {
   "id": "0",
@@ -1552,6 +1914,33 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_tx_notes","params":{"txids":["3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f"],"notes":["This is an example"]}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "set_tx_notes",
+    "params": {
+        "txids": [
+            "3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f"
+        ],
+        "notes": ["This is an example"],
+    },
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {
+    "txids": [
+        "3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f"
+    ],
+    "notes": ["This is an example"],
+}
+rpc_connection.set_tx_notes(params)
 ```
 ```json
 {
@@ -1578,6 +1967,23 @@ Alias: *None*.
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_tx_notes","params":{"txids":["3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f"]}}' -H 'Content-Type: application/json'
 ```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "get_tx_notes",
+    "params": {"txids": ["3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f"]},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"txids": ["3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f"]}
+rpc_connection.get_tx_notes(params)
+```
 ```json
 {
   "id": "0",
@@ -1602,6 +2008,23 @@ Alias: *None*.
 ##### shell:
 ```shell
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_attribute","params":{"key":"my_attribute","value":"my_value"}}' -H 'Content-Type: application/json'
+```
+##### python; requests:
+```python
+...
+data = {
+    "jsonrpc": "2.0",
+    "id": "0",
+    "method": "set_attribute",
+    "params": {"key": "my_attribute", "value": "my_value"},
+}
+...
+```
+##### python; python-monerorpc:
+```python
+...
+params = {"key": "my_attribute", "value": "my_value"}
+rpc_connection.set_attribute(params)
 ```
 ```json
 {
