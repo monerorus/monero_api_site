@@ -720,7 +720,7 @@ data = {
         "subaddr_indices": [0],
         "priority": 0,
         "ring_size": 7,
-        "get_tx_key": true,
+        "get_tx_key": True,
     },
 }
 ...
@@ -743,7 +743,7 @@ params = {
     "subaddr_indices": [0],
     "priority": 0,
     "ring_size": 7,
-    "get_tx_key": true,
+    "get_tx_key": True,
 }
 rpc_connection.transfer(params)
 ```
@@ -820,7 +820,7 @@ data = {
         "subaddr_indices": [0],
         "priority": 0,
         "ring_size": 7,
-        "get_tx_key": true,
+        "get_tx_key": True,
     },
 }
 ...
@@ -843,7 +843,7 @@ params = {
     "subaddr_indices": [0],
     "priority": 0,
     "ring_size": 7,
-    "get_tx_key": true,
+    "get_tx_key": True,
 }
 rpc_connection.transfer_split(params)
 ```
@@ -916,8 +916,8 @@ data = {
         "subaddr_indices": [0],
         "priority": 0,
         "ring_size": 7,
-        "do_not_relay": true,
-        "get_tx_hex": true,
+        "do_not_relay": True,
+        "get_tx_hex": True,
     },
 }
 ...
@@ -936,8 +936,8 @@ params = {
     "subaddr_indices": [0],
     "priority": 0,
     "ring_size": 7,
-    "do_not_relay": true,
-    "get_tx_hex": true,
+    "do_not_relay": True,
+    "get_tx_hex": True,
 }
 rpc_connection.sign_transfer(params)
 ```
