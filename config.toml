@@ -21,11 +21,20 @@ search = true
 
 # Configure the language example tabs.
 [[params.language_tabs]]
+key = "python"
+name = "Python"
+[[params.language_tabs]]
+key = "py"
+name = "Python MoneroRPC lib"
+[[params.language_tabs]]
 key = "shell"
 name = "Shell" 
 [[params.language_tabs]]
 key = "json"
 name = "Response"
+
+
+
 
 #Languages 
 [languages]
