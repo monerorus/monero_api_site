@@ -33,14 +33,12 @@ name = "Shell"
 key = "json"
 name = "Response"
 
-
-
-
 #Languages 
 [languages]
 
 [languages.ru]
 languageName = "Русский"
+contentDir = "content/ru"
 weight = 1
 title = "Monero RPC API"
 
@@ -56,6 +54,7 @@ hrefTargetBlank = true
 
 [languages.en]
 languageName = "English"
+contentDir = "content/en"
 weight = 2
 title = "Monero RPC API"
 
