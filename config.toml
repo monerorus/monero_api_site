@@ -2,6 +2,7 @@ baseURL = "https://api.xmr.ru/"
 languageCode = "en"
 title = "Monero RPC API"
 theme = "docuapi"
+relativeURLs = true
 
 # Code higlighting settings
 pygmentsCodefences = true
@@ -33,14 +34,12 @@ name = "Shell"
 key = "json"
 name = "Response"
 
-
-
-
 #Languages 
 [languages]
 
 [languages.ru]
 languageName = "Русский"
+contentDir = "content/ru"
 weight = 1
 title = "Monero RPC API"
 
@@ -56,6 +55,7 @@ hrefTargetBlank = true
 
 [languages.en]
 languageName = "English"
+contentDir = "content/en"
 weight = 2
 title = "Monero RPC API"
 

@@ -9,11 +9,11 @@ title: Wallet RPC API Reference
 Updated
 </aside>
 
-## Введение
+## Р’РІРµРґРµРЅРёРµ
 
-Здесь представлен список всех возможных методов вызова monero-wallet-rpc, их входных и выходных данных, а также примеры применения каждого из них. Программа monero-wallet-rpc заменила интерфейс RPC, который был в simplewallet, а затем появился в monero-wallet-cli.
+Р—РґРµСЃСЊ РїСЂРµРґСЃС‚Р°РІР»РµРЅ СЃРїРёСЃРѕРє РІСЃРµС… РІРѕР·РјРѕР¶РЅС‹С… РјРµС‚РѕРґРѕРІ РІС‹Р·РѕРІР° monero-wallet-rpc, РёС… РІС…РѕРґРЅС‹С… Рё РІС‹С…РѕРґРЅС‹С… РґР°РЅРЅС‹С…, Р° С‚Р°РєР¶Рµ РїСЂРёРјРµСЂС‹ РїСЂРёРјРµРЅРµРЅРёСЏ РєР°Р¶РґРѕРіРѕ РёР· РЅРёС…. РџСЂРѕРіСЂР°РјРјР° monero-wallet-rpc Р·Р°РјРµРЅРёР»Р° РёРЅС‚РµСЂС„РµР№СЃ RPC, РєРѕС‚РѕСЂС‹Р№ Р±С‹Р» РІ simplewallet, Р° Р·Р°С‚РµРј РїРѕСЏРІРёР»СЃСЏ РІ monero-wallet-cli.
 
-Все методы monero-wallet-rpc используют один и тот же интерфейс JSON RPC. Например:
+Р’СЃРµ РјРµС‚РѕРґС‹ monero-wallet-rpc РёСЃРїРѕР»СЊР·СѓСЋС‚ РѕРґРёРЅ Рё С‚РѕС‚ Р¶Рµ РёРЅС‚РµСЂС„РµР№СЃ JSON RPC. РќР°РїСЂРёРјРµСЂ:
 
 <code>
 IP=127.0.0.1  
@@ -26,7 +26,7 @@ curl \
     -H 'Content-Type: application/json'
 </code>
 
-Если monero-wallet-rpc был запущен с аргументом `--rpc-login` как `username:password`, следует использовать следующий пример:
+Р•СЃР»Рё monero-wallet-rpc Р±С‹Р» Р·Р°РїСѓС‰РµРЅ СЃ Р°СЂРіСѓРјРµРЅС‚РѕРј `--rpc-login` РєР°Рє `username:password`, СЃР»РµРґСѓРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃР»РµРґСѓСЋС‰РёР№ РїСЂРёРјРµСЂ:
 
 <code>
 IP=127.0.0.1  
@@ -41,7 +41,7 @@ curl \
 </code>
 
 <aside class="notice">
-Примечание: "@atomic-units" составляют наименьшую часть от 1 XMR в соответствии с реализацией monerod. **1 XMR = 1e12 @atomic-units.**
+РџСЂРёРјРµС‡Р°РЅРёРµ: "@atomic-units" СЃРѕСЃС‚Р°РІР»СЏСЋС‚ РЅР°РёРјРµРЅСЊС€СѓСЋ С‡Р°СЃС‚СЊ РѕС‚ 1 XMR РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ СЂРµР°Р»РёР·Р°С†РёРµР№ monerod. **1 XMR = 1e12 @atomic-units.**
 </aside> 
 
 ## JSON RPC Methods:
@@ -79,7 +79,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-Возвратить информацию о балансе кошелька.  
+Р’РѕР·РІСЂР°С‚РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ Р±Р°Р»Р°РЅСЃРµ РєРѕС€РµР»СЊРєР°.  
 Alias: *getbalance*.  
 
 |             | Parameter              | Type                            | Description
@@ -2105,7 +2105,7 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "languages": ["Deutsch","English","Espanol","Francais","Italiano","Nederlands","Portugues","русский язык","???","???? (??)","Esperanto","Lojban"]
+    "languages": ["Deutsch","English","Espanol","Francais","Italiano","Nederlands","Portugues","СЂСѓСЃСЃРєРёР№ СЏР·С‹Рє","???","???? (??)","Esperanto","Lojban"]
   }
 }
 ```
