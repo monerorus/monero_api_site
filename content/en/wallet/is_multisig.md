@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **is_multisig**
 
 > Example for a non-multisig wallet:

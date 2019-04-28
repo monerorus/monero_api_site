@@ -1,5 +1,8 @@
-## **get_block**
+---
+weight: 205
+---
 
+## **get_block**
 
 > Look up by height   
 > In the following example, block 912345 is looked up by its height. Note that block 912345 does not have any non-coinbase transactions. (See the next example for a block with extra transactions):

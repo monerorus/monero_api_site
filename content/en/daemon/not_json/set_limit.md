@@ -1,5 +1,8 @@
-## **/set_limit**
+---
+weight: 305
+---
 
+## **/set_limit**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/set_limit -d '{"limit_down": 1024}' -H 'Content-Type: application/json'

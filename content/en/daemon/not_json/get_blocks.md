@@ -1,5 +1,8 @@
-## **/get_blocks.bin**
+---
+weight: 305
+---
 
+## **/get_blocks.bin**
 
 Get all blocks info. Binary request.  
 Alias: **/getblocks.bin**.  

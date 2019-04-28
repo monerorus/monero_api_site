@@ -1,5 +1,8 @@
-## **/get_transaction_pool_stats**
+---
+weight: 305
+---
 
+## **/get_transaction_pool_stats**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/get_transaction_pool_stats -H 'Content-Type: application/json'

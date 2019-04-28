@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **check_reserve_proof**
 
 > In the example below, the reserve has been proven:

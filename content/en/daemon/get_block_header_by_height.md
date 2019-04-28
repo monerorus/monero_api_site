@@ -1,3 +1,7 @@
+---
+weight: 205
+---
+
 ## **get_block_header_by_height**
 
 > In this example, block 912345 is looked up by its height (notice that the returned information is the same as in the previous example):

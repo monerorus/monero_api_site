@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **open_wallet**
 
 ```shell

@@ -1,5 +1,8 @@
-## **/get_transaction_pool_hashes.bin**
+---
+weight: 305
+---
 
+## **/get_transaction_pool_hashes.bin**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/get_transaction_pool_hashes.bin -H 'Content-Type: application/json'

@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **check_spend_proof**
 
 > In the example below, the spend has been proven:

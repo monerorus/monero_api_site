@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **get_tx_proof**
 
 ```shell

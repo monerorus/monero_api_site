@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_transaction_pool**
 
 > Example (Note: Some lists in the returned information have been truncated for display reasons):

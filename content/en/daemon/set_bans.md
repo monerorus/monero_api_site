@@ -1,3 +1,7 @@
+---
+weight: 205
+---
+
 ## **set_bans**
 
 > banning by host

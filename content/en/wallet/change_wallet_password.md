@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **change_wallet_password**
 
 ```shell

@@ -1,3 +1,7 @@
+---
+weight: 205
+---
+
 ## **get_block_header_by_hash**
 
 > In this example, block 912345 is looked up by its hash:

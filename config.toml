@@ -2,6 +2,7 @@ baseURL = "https://api.xmr.ru/"
 languageCode = "en"
 title = "Monero RPC API"
 theme = "docuapi"
+relativeURLs = true
 
 # Code higlighting settings
 pygmentsCodefences = true

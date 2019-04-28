@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_hashes.bin**
 
 Get hashes. Binary request.

@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/mining_status**
 
 > Mining

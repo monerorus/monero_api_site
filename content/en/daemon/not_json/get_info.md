@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_info (not JSON)**
 
 This method is a convenient backward support and should not be used anymore. See [get_info](#get-info) JSON RPC for details.  
@@ -5,7 +9,6 @@ Alias:
 
 * **/getinfo**
 * **get_info**
-
 
 ## **/get_limit**
 

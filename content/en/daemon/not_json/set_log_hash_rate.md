@@ -1,5 +1,8 @@
-## **/set_log_hash_rate**
+---
+weight: 305
+---
 
+## **/set_log_hash_rate**
 
 > Mining
 

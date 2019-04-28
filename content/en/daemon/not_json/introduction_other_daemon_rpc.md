@@ -24,5 +24,3 @@ It is recommended to use JSON RPC where such alternatives exist, rather than the
 </aside>
 
 For calls that end with **.bin**, the data is exchanged in the form of binary, serialized objects, as defined in the [Core RPC Server](https://github.com/monero-project/monero/blob/master/src/rpc/core_rpc_server_commands_defs.h).
-
-{{content\en\daemon\not_json\get_height}}

@@ -1,5 +1,8 @@
-## **/in_peers**
+---
+weight: 305
+---
 
+## **/in_peers**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/out_peers -d '{"in_peers": 3232235535}' -H 'Content-Type: application/json'

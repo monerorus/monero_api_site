@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **make_multisig**
 
 > Example for 2/2 Multisig Wallet:

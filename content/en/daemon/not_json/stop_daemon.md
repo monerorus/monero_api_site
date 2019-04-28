@@ -1,5 +1,8 @@
-## **/stop_daemon**
+---
+weight: 305
+---
 
+## **/stop_daemon**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/stop_daemon -H 'Content-Type: application/json'
@@ -16,4 +19,3 @@ Alias: None.
 | ---         | ---       | ---    | ---
 |**Inputs:**  | *None*.   |        |
 |**Outputs:** | status    | string | General RPC error code. "OK" means everything looks good.
-

@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **make_integrated_address**
 
 > Example (Payment ID is empty, use a random ID):

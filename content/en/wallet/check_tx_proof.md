@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **check_tx_proof**
 
 > In the example below, the transaction has been proven:

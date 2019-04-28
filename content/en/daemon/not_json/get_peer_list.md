@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_peer_list**
 
 > Example (truncated lists):

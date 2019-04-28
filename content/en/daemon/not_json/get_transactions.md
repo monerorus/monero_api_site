@@ -1,5 +1,8 @@
-## **/get_transactions**
+---
+weight: 305
+---
 
+## **/get_transactions**
 
 > Example 1: Return transaction information in binary format.
 

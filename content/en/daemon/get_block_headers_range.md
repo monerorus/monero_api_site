@@ -1,5 +1,8 @@
-## **get_block_headers_range**
+---
+weight: 205
+---
 
+## **get_block_headers_range**
 
 > In this example, blocks range from height 1545999 to 1546000 is looked up (notice that the returned informations are ascending order and that it is at the April 2018 network upgrade time):
 

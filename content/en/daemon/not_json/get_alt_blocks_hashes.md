@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_alt_blocks_hashes**
 
 

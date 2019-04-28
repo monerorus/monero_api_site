@@ -1,5 +1,8 @@
-## **/set_log_categories**
+---
+weight: 305
+---
 
+## **/set_log_categories**
 
 > Example to set all facilities to Security Level `Info`:
 

@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **get_bulk_payments**
 
 ```shell

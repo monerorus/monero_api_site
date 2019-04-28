@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **start_mining**
 
 ```shell
@@ -35,4 +39,3 @@ Alias: *None*.
 |             | *do_background_mining* | boolean      | Allow to start the miner in @smart-mining mode.
 |             | *ignore_battery*       | boolean      | Ignore battery status (for @smart-mining only)
 |**Outputs:** | *None*.                |              |
-

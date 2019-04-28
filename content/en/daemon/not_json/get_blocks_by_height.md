@@ -1,5 +1,8 @@
-## **/get_blocks_by_height.bin**
+---
+weight: 305
+---
 
+## **/get_blocks_by_height.bin**
 
 Get blocks by height. Binary request.
 

@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/is_key_image_spent**
 
 ```shell

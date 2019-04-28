@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **get_spend_proof**
 
 ```shell

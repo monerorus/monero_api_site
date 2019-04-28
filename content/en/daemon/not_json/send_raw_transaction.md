@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/send_raw_transaction**
 
 > Example (No return information included here.):

@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **get_reserve_proof**
 
 ```shell
@@ -37,4 +41,3 @@ Alias: *None*.
 |             | *amount*        | unsigned int | Amount (in @atomic-units) to prove the account has for reserve. (ignored if `all` is set to true)
 |             | *message*       | string       | (Optional) add a message to the signature to further authenticate the prooving process.
 |**Outputs:** | signature       | string       | reserve signature.
-

@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **stop_mining**
 
 ```shell

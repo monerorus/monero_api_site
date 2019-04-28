@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_outs.bin**
 
 Get outputs. Binary request.  

@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **get_transfer_by_txid**
 
 ```shell
@@ -54,7 +58,6 @@
 ```
 Show information about a transfer to/from this address.  
 Alias: *None*.  
-
 
 |             | Parameter                         | Type         | Description
 | ---         | ---                               | ---          | ---

@@ -1,3 +1,7 @@
+---
+weight: 305
+---
+
 ## **/get_o_indexes.bin**
 
 Get global outputs of transactions. Binary request.  

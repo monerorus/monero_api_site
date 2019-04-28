@@ -1,5 +1,8 @@
-## **/update**
+---
+weight: 305
+---
 
+## **/update**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/update -d '{"command":"check"}' -H 'Content-Type: application/json'

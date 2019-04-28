@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **close_wallet**
 
 ```shell

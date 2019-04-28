@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **submit_transfer**
 
 > In the example below, we submit the transfer using the signed_txset generated above:

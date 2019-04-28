@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **create_wallet**
 
 ```shell

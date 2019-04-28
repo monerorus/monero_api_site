@@ -1,3 +1,7 @@
+---
+weight: 205
+---
+
 ## **get_last_block_header**
 
 > In this example, the most recent block (1562023 at the time) is returned:

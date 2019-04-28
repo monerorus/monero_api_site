@@ -1,5 +1,8 @@
-## **get_alternate_chains**
+---
+weight: 205
+---
 
+## **get_alternate_chains**
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_alternate_chains"}' -H 'Content-Type: application/json'

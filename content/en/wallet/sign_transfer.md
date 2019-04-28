@@ -1,3 +1,7 @@
+---
+weight: 805
+---
+
 ## **sign_transfer**
 
 > In the example below, we first generate an unsigned_txset on a read only wallet before signing it:
