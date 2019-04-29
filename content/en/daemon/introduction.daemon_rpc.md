@@ -11,6 +11,36 @@ Updated
 
 ## Introduction
 
+```python
+  This part is the same for all methods and described just here.
+  For each request you need define first this:
+      import requests
+      import json
+      wallet_url = "http://127.0.0.1:18082/json_rpc"
+      header = {"Content-Type": "application/json"}
+
+  This part is different for all method and described below for each method.
+  In data struct you set params for request, example:
+      data = {
+          "jsonrpc": "2.0",
+          "id": "0",
+          "method": "get_balance",
+          "params": {"account_index": 0, "address_indices": [0, 1]},
+      }
+
+  This part is the same for all methods and described just here.
+  For each request you get response like this:
+      response = requests.post(wallet_url, data=json.dumps(data), headers=header)
+      response.raise_for_status()
+      response.json()
+```
+```py
+  This part is the same for all methods and described just here.
+  For each request you need define first:
+      from monerorpc.authproxy import AuthServiceProxy
+      rpc_connection = AuthServiceProxy('http://127.0.0.1:18082/json_rpc')
+```
+
 This is a list of the monerod daemon RPC calls, their inputs and outputs, and examples of each.
 
 Many RPC calls use the daemon's JSON RPC interface while others use their own interfaces, as demonstrated below.

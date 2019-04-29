@@ -7,6 +7,31 @@ weight: 205
 ```shell
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_txpool","params":{"txids":["dc16fa8eaffe1484ca9014ea050e13131d3acf23b419f33bb4cc0b32b6c49308",""]}}' -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  data = {
+      "jsonrpc": "2.0",
+      "id": "0",
+      "method": "flush_txpool",
+      "params": {
+          "txids": [
+              "dc16fa8eaffe1484ca9014ea050e13131d3acf23b419f33bb4cc0b32b6c49308",
+              "",
+          ]
+      },
+  }
+  ...^ see introduction
+```
+```py
+  ...^ see introduction
+  params = {
+      "txids": [
+          "dc16fa8eaffe1484ca9014ea050e13131d3acf23b419f33bb4cc0b32b6c49308",
+          "",
+      ]
+  }
+  rpc_connection.flush_txpool(params)
+```
 ```json
 {
   "id": "0",

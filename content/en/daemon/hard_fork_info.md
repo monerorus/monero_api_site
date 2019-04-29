@@ -7,6 +7,19 @@ weight: 205
 ```shell
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"hard_fork_info"}' -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  data = {
+      "jsonrpc": "2.0",
+      "id": "0",
+      "method": "hard_fork_info",
+  }
+  ...^ see introduction
+```
+```py
+  ...^ see introduction
+  rpc_connection.hard_fork_info()
+```
 ```json
 {
   "id": "0",
