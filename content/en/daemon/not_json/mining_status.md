@@ -9,6 +9,11 @@ weight: 305
 ```shell
 $ curl -X POST http://127.0.0.1:18081/mining_status -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  url = "http://127.0.0.1:18081/mining_status"
+  ...^ see introduction
+```
 ```json
 {
   "active": true,

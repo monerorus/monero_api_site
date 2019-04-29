@@ -7,6 +7,12 @@ weight: 305
 ```shell
 $ curl -X POST http://127.0.0.1:18081/update -d '{"command":"check"}' -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  url = "http://127.0.0.1:18081/update"
+  data = {"command": "check"}
+  ...^ see introduction
+```
 ```json
 {
   "auto_uri": "",
