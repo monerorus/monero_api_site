@@ -8,6 +8,7 @@ title: Wallet RPC API Reference
   This part is the same for all methods and described just here.
   For each request you need define first this:
       import requests
+      import json
       header = {"Content-Type": "application/json"}
 
   This part is different for all method and described below for each method.
@@ -17,7 +18,7 @@ title: Wallet RPC API Reference
 
   This part is the same for all methods and described just here.
   For each request you get response like this:
-      response = requests.post(url, headers=header)
+      response = requests.post(url, data=json.dumps(data), headers=header)
       response.raise_for_status()
       response.json()
 ```
