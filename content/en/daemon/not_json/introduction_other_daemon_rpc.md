@@ -8,12 +8,12 @@ title: Wallet RPC API Reference
   This part is the same for all methods and described just here.
   For each request you need define first this:
       import requests
-      import json
       header = {"Content-Type": "application/json"}
 
   This part is different for all method and described below for each method.
   In data struct you set params for request, example:
-      url = "http://127.0.0.1:18082/get_height"
+      url = "http://127.0.0.1:18081/set_limit"
+      data = {"limit_down": 1024}
 
   This part is the same for all methods and described just here.
   For each request you get response like this:
