@@ -7,6 +7,19 @@ weight: 205
 ```shell
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_alternate_chains"}' -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  data = {
+      "jsonrpc": "2.0",
+      "id": "0",
+      "method": "get_alternate_chains",
+  }
+  ...^ see introduction
+```
+```py
+  ...^ see introduction
+  rpc_connection.get_alternate_chains()
+```
 ```json
 {
   "id": "0",

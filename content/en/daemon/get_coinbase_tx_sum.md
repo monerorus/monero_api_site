@@ -8,6 +8,21 @@ weight: 205
 ```shell
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_coinbase_tx_sum","params":{"height":1563078,"count":2}}' -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  data = {
+      "jsonrpc": "2.0",
+      "id": "0",
+      "method": "get_coinbase_tx_sum",
+      "params": {"height": 1563078, "count": 2},
+  }
+  ...^ see introduction
+```
+```py
+  ...^ see introduction
+  params = {"height": 1563078, "count": 2}
+  rpc_connection.get_coinbase_tx_sum(params)
+```
 ```json
 {
   "id": "0",
