@@ -7,6 +7,17 @@ weight: 305
 ```shell
 $ curl -X POST http://127.0.0.1:18081/start_mining -d '{"do_background_mining":false,"ignore_battery":true,"miner_address":"47xu3gQpF569au9C2ajo5SSMrWji6xnoE5vhr94EzFRaKAGw6hEGFXYAwVADKuRpzsjiU1PtmaVgcjUJF89ghGPhUXkndHc","threads_count":1}' -H 'Content-Type: application/json'
 ```
+```python
+  ...^ see introduction
+  url = "http://127.0.0.1:18081/start_mining"
+  data = {
+      "do_background_mining": False,
+      "ignore_battery": True,
+      "miner_address": "47xu3gQpF569au9C2ajo5SSMrWji6xnoE5vhr94EzFRaKAGw6hEGFXYAwVADKuRpzsjiU1PtmaVgcjUJF89ghGPhUXkndHc",
+      "threads_count": 1,
+  }
+  ...^ see introduction
+```
 ```json
 {
   "status": "OK"
