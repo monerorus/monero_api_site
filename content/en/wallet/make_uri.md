@@ -8,7 +8,7 @@ weight: 805
   curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt","amount":10,"payment_id":"420fa29b2d9a49f5","tx_description":"Testing out the make_uri function.","recipient_name":"el00ruobuob Stagenet wallet"}}'  -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
@@ -21,10 +21,10 @@ weight: 805
           "recipient_name": "el00ruobuob Stagenet wallet",
       },
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {
       "address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt",
       "amount": 10,

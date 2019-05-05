@@ -8,7 +8,7 @@ weight: 805
   curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_address_index","params":{"address":"7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
@@ -17,10 +17,10 @@ weight: 805
           "address": "7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"
       },
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {
       "address": "7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"
   }

@@ -10,14 +10,14 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/get_transactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/get_transactions"
   data = {
       "txs_hashes": [
           "d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"
       ]
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {

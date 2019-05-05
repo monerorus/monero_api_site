@@ -10,10 +10,10 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/set_log_categories -d '{"categories": "*:INFO"}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/set_log_categories"
   data = {"categories": "*:INFO"}
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {
@@ -36,6 +36,7 @@ $ curl -X POST http://127.0.0.1:18081/set_log_categories -H 'Content-Type: appli
 
 Set the daemon log categories.
 Categories are represented as a comma separated list of `<Category>:<level>` (similarly to syslog standard `<Facility>:<Severity-level>`), where:
+
 * *Category*  is one of the following:
   * *\* | All facilities
   * *default*
@@ -85,8 +86,9 @@ Categories are represented as a comma separated list of `<Category>:<level>` (si
   * *INFO*
   * *DEBUG*
   * *TRACE | lower level
+  
 A level automatically includes higher level.
-By default, categories are set to `*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO`.
+By default, categories are set to _*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO_.
 Setting the categories to "" prevent any logs to be outputed.  
 Alias: None.
 

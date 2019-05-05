@@ -11,7 +11,7 @@ weight: 805
   curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":1000000000000,"address":"7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"}],"account_index":0,"subaddr_indices":[0],"priority":0,"ring_size":7,"do_not_relay":true,"get_tx_hex":true}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
@@ -31,10 +31,10 @@ weight: 805
           "get_tx_hex": True,
       },
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {
       "destinations": [
           {
@@ -59,11 +59,11 @@ weight: 805
       "amount": 1000000000000,
       "fee": 15202740000,
       "multisig_txset": "",
-      "tx_blob": "...^ see introductionlong_hex...^ see introduction",
+      "tx_blob": "#...^ see introductionlong_hex#...^ see introduction",
       "tx_hash": "c648ba0a049e5ce4ec21361dbf6e4b21eac0f828eea9090215de86c76b31d0a4",
       "tx_key": "",
       "tx_metadata": "",
-      "unsigned_txset": "...^ see introductionlong_hex...^ see introduction"
+      "unsigned_txset": "#...^ see introductionlong_hex#...^ see introduction"
     }
   }
 ```
@@ -71,21 +71,21 @@ weight: 805
 > Sign tx using the previously generated unsigned_txset
 
 ```shell
-  curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign_transfer","params":{"unsigned_txset": "...^ see introductionlong_hex...^ see introduction"}}' -H 'Content-Type: application/json'
+  curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign_transfer","params":{"unsigned_txset": "#...^ see introductionlong_hex#...^ see introduction"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "sign_transfer",
-      "params": {"unsigned_txset": "...^ see introductionlong_hex...^ see introduction"},
+      "params": {"unsigned_txset": "#...^ see introductionlong_hex#...^ see introduction"},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
-  params = {"unsigned_txset": "...^ see introductionlong_hex...^ see introduction"}
+  #...^ see introduction
+  params = {"unsigned_txset": "#...^ see introductionlong_hex#...^ see introduction"}
   rpc_connection.sign_transfer(params)
 ```
 ```json
@@ -93,7 +93,7 @@ weight: 805
     "id": "0",
     "jsonrpc": "2.0",
     "result": {
-      "signed_txset": "...^ see introductionlong_hex...^ see introduction",
+      "signed_txset": "#...^ see introductionlong_hex#...^ see introduction",
       "tx_hash_list": ["ff2e2d49fbfb1c9a55754f786576e171c8bf21b463a74438df604b7fa6cebc6d"]
     }
   }

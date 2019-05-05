@@ -8,17 +8,17 @@ weight: 805
   curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_address","params":{"account_index":0,"label":"new-sub"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "create_address",
       "params": {"account_index": 0, "label": "new-sub"},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {"account_index": 0, "label": "new-sub"}
   rpc_connection.create_address(params)
 ```

@@ -9,17 +9,17 @@ weight: 205
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_output_histogram","params":{"amounts":[20000000000]}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "get_output_histogram",
       "params": {"amounts": [20000000000]},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {"amounts": [20000000000]}
   rpc_connection.get_output_histogram(params)
 ```

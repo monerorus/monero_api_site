@@ -4,15 +4,15 @@ weight: 305
 
 ## **/mining_status**
 
-> Mining
+> Mining response
 
 ```shell
 $ curl -X POST http://127.0.0.1:18081/mining_status -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/mining_status"
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {
@@ -25,9 +25,9 @@ $ curl -X POST http://127.0.0.1:18081/mining_status -H 'Content-Type: applicatio
 }
 ```
 
-> Not Mining
+> Not Mining response
 
-```
+```shell
 $ curl -X POST http://127.0.0.1:18081/mining_status -H 'Content-Type: application/json'
 ```
 ```json

@@ -7,21 +7,21 @@ weight: 805
 > In the example below, we submit the transfer using the signed_txset generated above:
 
 ```shell
-  curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_transfer","params":{"tx_data_hex":...^ see introductionlong_hex...^ see introduction"}}' -H 'Content-Type: application/json'
+  curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_transfer","params":{"tx_data_hex":#...^ see introductionlong_hex#...^ see introduction"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "submit_transfer",
-      "params": {"tx_data_hex": "...^ see introductionlong_hex...^ see introduction"},
+      "params": {"tx_data_hex": "#...^ see introductionlong_hex#...^ see introduction"},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
-  params = {"tx_data_hex": "...^ see introductionlong_hex...^ see introduction"}
+  #...^ see introduction
+  params = {"tx_data_hex": "#...^ see introductionlong_hex#...^ see introduction"}
   rpc_connection.submit_transfer(params)
 ```
 ```json

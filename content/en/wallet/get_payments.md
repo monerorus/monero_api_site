@@ -8,17 +8,17 @@ weight: 805
   curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_payments","params":{"payment_id":"60900e5603bf96e3"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "get_payments",
       "params": {"payment_id": "60900e5603bf96e3"},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {"payment_id": "60900e5603bf96e3"}
   rpc_connection.get_payments(params)
 ```
@@ -55,6 +55,6 @@ Alias: *None*.
 |             | ..block_height  | unsigned int | Height of the block that first confirmed this payment.
 |             | ..unlock_time   | unsigned int | Time (in block height) until this payment is safe to spend.
 |             | ..subaddr_index |              | subaddress index:
-|             | ...^ see introduction.major       | unsigned int | Account index for the subaddress.
-|             | ...^ see introduction.minor       | unsigned int | Index of the subaddress in the account.
+|             | #...^ see introduction.major       | unsigned int | Account index for the subaddress.
+|             | #...^ see introduction.minor       | unsigned int | Index of the subaddress in the account.
 |             | ..address       | string       | Address receiving the payment | Base58 representation of the public keys.

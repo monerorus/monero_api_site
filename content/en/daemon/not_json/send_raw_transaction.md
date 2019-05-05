@@ -10,10 +10,10 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/send_raw_transaction -d '{"tx_as_hex":"de6a3...", "do_not_relay":false}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/send_raw_transaction"
   data = {"tx_as_hex": "de6a3...", "do_not_relay": False}
-  ...^ see introduction
+  #...^ see introduction
 ```
 
 Broadcast a raw transaction to the network.  

@@ -8,17 +8,17 @@ weight: 805
   curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_account_tag_description","params":{"tag":"myTag","description":"Test tag"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "set_account_tag_description",
       "params": {"tag": "myTag", "description": "Test tag"},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {"tag": "myTag", "description": "Test tag"}
   rpc_connection.set_account_tag_description(params)
 ```

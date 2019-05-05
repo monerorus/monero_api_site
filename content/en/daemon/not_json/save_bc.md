@@ -8,9 +8,9 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/save_bc -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/save_bc"
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {

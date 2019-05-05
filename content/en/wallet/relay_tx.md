@@ -5,21 +5,21 @@ weight: 805
 ## **relay_tx**
 
 ```shell
-  curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"relay_tx","params":{"hex":"...^ see introductiontx_metadata...^ see introduction"}}' -H 'Content-Type: application/json'
+  curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"relay_tx","params":{"hex":"#...^ see introductiontx_metadata#...^ see introduction"}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "relay_tx",
-      "params": {"hex": "...^ see introductiontx_metadata...^ see introduction"},
+      "params": {"hex": "#...^ see introductiontx_metadata#...^ see introduction"},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
-  params = {"hex": "...^ see introductiontx_metadata...^ see introduction"}
+  #...^ see introduction
+  params = {"hex": "#...^ see introductiontx_metadata#...^ see introduction"}
   rpc_connection.relay_tx(params)
 ```
 ```json

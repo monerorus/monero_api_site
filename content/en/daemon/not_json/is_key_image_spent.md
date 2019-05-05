@@ -8,7 +8,7 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/is_key_image_spent"
   data = {
       "key_images": [
@@ -16,7 +16,7 @@ $ curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1
           "7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4",
       ]
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {

@@ -8,10 +8,10 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/out_peers -d '{"in_peers": 3232235535}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/out_peers"
   data = {"in_peers": 3232235535}
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {

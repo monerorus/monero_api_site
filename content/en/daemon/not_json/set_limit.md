@@ -8,10 +8,10 @@ weight: 305
 $ curl -X POST http://127.0.0.1:18081/set_limit -d '{"limit_down": 1024}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   url = "http://127.0.0.1:18081/set_limit"
   data = {"limit_down": 1024}
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```json
 {

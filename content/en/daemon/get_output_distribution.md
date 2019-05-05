@@ -8,17 +8,17 @@ weight: 205
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_output_distribution","params":{"amounts":[628780000],"from_height":1462078}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "get_output_distribution",
       "params": {"amounts": [628780000], "from_height": 1462078},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {"amounts": [628780000], "from_height": 1462078}
   rpc_connection.get_output_distribution(params)
 ```

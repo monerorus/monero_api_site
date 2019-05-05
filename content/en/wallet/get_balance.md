@@ -9,17 +9,17 @@ weight: 805
 ```
 
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "get_balance",
       "params": {"account_index": 0, "address_indices": [0, 1]},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
+  #...^ see introduction
   params = {"account_index": 0, "address_indices": [0, 1]}
   rpc_connection.get_balance(params)
 ```
@@ -56,7 +56,7 @@ Alias: *getbalance*.
 | ---         | ---                    | ---                             | ---
 |**Inputs:**  | *account_index*        | unsigned int                    | Return balance for this account.
 |             | *address_indices*      | array of unsigned int           | (Optional) Return balance detail for those subaddresses.
-|**Outputs:** | balance                | unsigned int                    | The total balance of the current monero|wallet|rpc in session.
+|**Outputs:** | balance                | unsigned int                    | The total balance of the current monero-wallet-rpc in session.
 |             | unlocked_balance       | unsigned int                    | Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
 |             | multisig_import_needed | boolean                         | True if importing multisig data is needed for returning a correct balance.
 |             | per_subaddress         | array of subaddress information | Balance information for each subaddress in an account.

@@ -5,21 +5,21 @@ weight: 805
 ## **import_multisig_info**
 
 ```shell
-  curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"import_multisig_info","params":{"info":["...^ see introductionmultisig_info...^ see introduction"]}}' -H 'Content-Type: application/json'
+  curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"import_multisig_info","params":{"info":["#...^ see introductionmultisig_info#...^ see introduction"]}}' -H 'Content-Type: application/json'
 ```
 ```python
-  ...^ see introduction
+  #...^ see introduction
   data = {
       "jsonrpc": "2.0",
       "id": "0",
       "method": "import_multisig_info",
-      "params": {"info": ["...^ see introductionmultisig_info...^ see introduction"]},
+      "params": {"info": ["#...^ see introductionmultisig_info#...^ see introduction"]},
   }
-  ...^ see introduction
+  #...^ see introduction
 ```
 ```py
-  ...^ see introduction
-  params = {"info": ["...^ see introductionmultisig_info...^ see introduction"]}
+  #...^ see introduction
+  params = {"info": ["#...^ see introductionmultisig_info#...^ see introduction"]}
   rpc_connection.import_multisig_info(params)
 ```
 ```json
